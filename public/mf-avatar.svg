@@ -18,8 +18,8 @@
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <use id="Circle-Background" fill="#7510F7" xlink:href="#path-1"></use>
-                <g id="🖍-Circle-Color" mask="url(#mask-2)" fill="#7510F7">
+                <use id="Circle-Background" fill="rgb(192 132 252)" xlink:href="#path-1"></use>
+                <g id="🖍-Circle-Color" mask="url(#mask-2)" fill="rgb(192 132 252)">
                     <rect id="🖍Color" x="0" y="0" width="216.445361" height="216"></rect>
                 </g>
             </g>
