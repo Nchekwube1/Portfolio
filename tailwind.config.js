@@ -5,11 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        'Poppins':['Poppins', 'sans-serif'],
-         'SourceSansPro-Regular':['"Source Sans Pro"','sans-serif'],
-         'SourceSansPro-Bold':['"Source Sans Pro"','sans-serif'],
-      }
+   colors:{
+     blue:{
+       50:'#141c3a',
+     100:'#7510F7'
+     },
+     dark:{
+       100:'#121212'
+     }
+   }
     },
   },
   darkMode: 'class',
