@@ -1,57 +1,62 @@
 @font-face {
-  font-family: 'Poppins-Bold';
-  src: url('../public/fonts/Poppins-Bold.ttf');
+  font-family: "Poppins-Bold";
+  src: url("../public/fonts/Poppins-Bold.ttf");
 }
 @font-face {
-  font-family: 'Poppins-Regular';
-  src:url('../public/fonts/Poppins-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'SourceSansPro-Regular';
-  src: url('../public/fonts/SourceSansPro-Regular.ttf');
-}
-@font-face {
-  font-family: 'Europa';
-  src: url('../public/fonts/Europa-Regular.ttf');
-}
-@font-face {
-  font-family: 'Eurostile';
-  src: url('../public/fonts/EurostileLv.ttf');
+  font-family: "Poppins-Regular";
+  src: url("../public/fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'SourceSansPro-Bold';
-  src: url('../public/fonts/SourceSansPro-Bold.ttf');
+  font-family: "SourceSansPro-Regular";
+  src: url("../public/fonts/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Europa";
+  src: url("../public/fonts/Europa-Regular.ttf");
+}
+@font-face {
+  font-family: "Eurostile";
+  src: url("../public/fonts/EurostileLv.ttf");
+}
+
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("../public/fonts/SourceSansPro-Bold.ttf");
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-  .poppins-bold{
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .poppins-bold {
     font-family: Poppins-Bold;
   }
-  .source-bold{
+  .source-bold {
     font-family: SourceSansPro-Bold;
   }
-  .poppins-regular{
+  .poppins-regular {
     font-family: Poppins-Regular;
   }
-  .sans-regular{
+  .sans-regular {
     font-family: SourceSansPro-Regular;
   }
-  .europa{
-    font-family:Europa
+  .europa {
+    font-family: Europa;
   }
-  .eurostile{
+  .eurostile {
     font-family: Eurostile;
   }
-  .text-17{
-    font-size:16px;
+  .text-17 {
+    font-size: 16px;
   }
-  .text-19{
-    font-size:19px;
+  .text-19 {
+    font-size: 19px;
   }
 }
