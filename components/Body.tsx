@@ -76,14 +76,14 @@ function Body() {
     <>
     <div className="relative w-full pt-32 pb-48 flex-col bg-blue-100 flex justify-center items-center dark:bg-black px-5 md:px-0">
     <h1 className="text-center eurostile text-3xl font-bold poppins-regular text-white mb-6">
-      Hi, I'm Francis. Great to have you here
+      Hi, I&apos;m Francis. Great to have you here
     </h1>
     <div className="relative w-3/5 flex-wrap text-center">
       <h1 className="text-[20px] text-gray-100 dark:text-blue-100 europa">
-        Since beginning my journey as a software developer, I've done remote
+        Since beginning my journey as a software developer, I&apos;ve done remote
         work for agencies, worked for startups, and collaborated with
         talented individuals to create amazing products and designs for both
-        business and consumer use. I'm quite confident in my abilities,
+        business and consumer use. I&apos;m quite confident in my abilities,
         naturally curious, and always working on improving my skillset one
         design problem at a time.
       </h1>
