@@ -50,10 +50,10 @@ function Header() {
         </div>
       </div>
       <div className="relative flex justify-center items-center mt-16">
-        <Image src={profile} />
+        <Image src={profile}  alt='profile image'/>
       </div>
       <div className="relative flex justify-center items-center mt-16">
-        <Image src={hero} />
+        <Image src={hero} alt='hero' />
       </div>
  
 

@@ -67,7 +67,7 @@ function Body() {
       <div className="relative w-full pt-32 pb-48 flex-col bg-blue-100 flex justify-center items-center dark:bg-black px-5 md:px-0">
         <h1
           className="text-center eurostile text-3xl font-bold poppins-regular text-white mb-6"
-          data-aos="slide-left"
+          data-aos="fade-left"
         >
           Hi, I&apos;m Francis. Great to have you here
         </h1>
