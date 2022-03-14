@@ -39,6 +39,7 @@ function Body() {
         "Github",
         "Gitlab",
         "GraphQL",
+        "Redux Toolkit",
       ],
     },
     {
@@ -72,7 +73,7 @@ function Body() {
           Hi, I&apos;m Francis. Great to have you here
         </h1>
         <div
-          className="relative w-3/5 flex-wrap text-center"
+          className="relative w-4/5 md:w-3/5 flex-wrap text-center"
           data-aos-delay="100"
           data-aos="fade-right"
         >
