@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Body from "../components/Body";
 const Home: NextPage = () => {
   return (
-    <div className="relative">
+    <div className="relative w-full">
       <Head>
         <title>Unekwe Francis</title>
         <meta

@@ -11,8 +11,8 @@ function Footer() {
 
        </h1>
      </div>
-     <div className="h-full md:w-1/3 w-full pb-6 md:pb-0   flex justify-center items-center sm:px-2">
-       <h1 className="text-1xl text-gray-100 europa text-center">
+     <div className="h-full md:w-1/3 w-full pb-6 md:pb-0   flex justify-center items-center px-2">
+       <h1 className="text-1xl text-gray-100 europa text-center  relative">
        Interested in collaborating? We should schedule a meeting. I’ll bring snacks.
        </h1>
      </div>

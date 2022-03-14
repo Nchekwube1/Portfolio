@@ -44,7 +44,7 @@ function Header() {
           </h1>
         </div>
         <div className="pt-5">
-          <h3 className="europa text-2xl text-center tracking-wide dark:text-blue-100">
+          <h3 className="europa text-2xl text-center tracking-wide dark:text-blue-100 px-2">
             I design and code softwares best suited for your needs
           </h3>{" "}
         </div>

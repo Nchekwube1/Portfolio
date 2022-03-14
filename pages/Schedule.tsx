@@ -4,10 +4,10 @@ import ScheduleHeader from '../components/ScheduleHeader'
 
 function Schedule() {
   return (
-    <>
+    <div className='relative full'>
     <ScheduleHeader/>
     <SchduleForm/>
-    </>
+    </div>
   )
 }
 
