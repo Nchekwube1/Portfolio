@@ -15,7 +15,7 @@ function ScheduleHeader() {
           </Link>
         </div>
       </div>
-      <div className="relative w-full h-full justify-center items-center left-1/2">
+      <div className="relative w-full h-full flex my-3 justify-center items-center">
         <div className="relative w-20 h-20 ">
           <Image
             className="relative w-full h-full"
