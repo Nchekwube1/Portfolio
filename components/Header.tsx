@@ -32,7 +32,7 @@ function Header() {
         </div>
         <div>logo here</div>
         <div className="md:mr-24 mr-12  relative">
-          <button className="hover:text-white dark:hover:text-blue-100 hover:bg-blue-100 europa text-1xl dark:hover:bg-slate-700 dark:text-white cursor-pointer border-2 border-blue-100 dark:border-slate-700 px-5 py-3 rounded-full text-blue-100  ">
+          <button className="hover:text-white dark:hover:text-blue-100 hover:bg-blue-100 europa text-1xl dark:hover:bg-slate-700 dark:text-white cursor-pointer border-2 border-blue-100 dark:border-slate-700 px-7 py-3 rounded-full text-blue-100  ">
             Reach out
           </button>
         </div>
