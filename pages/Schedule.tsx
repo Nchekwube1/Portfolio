@@ -7,7 +7,7 @@ function Schedule() {
   const [emailRes, setEmailRes] = useState("");
   return (
     <div className="flex flex-col justify-center w-full">
-      {emailRes && (
+      {emailSent && (
         <div className="absolute top-14 w-full px-4 z-40">
           <div className="w-full md:w-1/3 py-5 shadow-md rounded-md flex flex-row justify-center items-center bg-green-400 relative">
             <h3 className="eurostile text-xl">{emailRes}</h3>

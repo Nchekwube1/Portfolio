@@ -10,7 +10,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
   const [email, setEmail] = useState("");
   const [projectType, setProjectType] = useState("");
   const [budget, setBudget] = useState("");
-  const [additional, setAdditionalƒ] = useState("");
+  const [additional, setAdditional] = useState("");
 
   const onSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
@@ -23,7 +23,18 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
     };
     Axios.post("/api/contact/", formData)
       .then((res) => {
-        console.log(res);
+        if (res.status === 200) {
+          setEmailSent(true);
+          setEmailRes(res.data);
+          setName("");
+          setEmail("");
+          setProjectType("");
+          setBudget("");
+          setAdditional("");
+          setTimeout(() => {
+            setEmailSent(false);
+          }, 5000);
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -109,7 +120,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
                 required
                 rows={6}
                 value={additional}
-                onChange={(e) => setAdditionalƒ(e.target.value)}
+                onChange={(e) => setAdditional(e.target.value)}
                 name="Additional"
                 className="w-full relative border-gray-200 border-2 rounded-md py-4 indent-3 text-xl europa font-light bg-transparent outline-none mt-4"
               />
