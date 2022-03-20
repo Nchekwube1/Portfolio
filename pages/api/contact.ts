@@ -19,7 +19,7 @@ const FormHandler = (req: NextApiRequest, res: NextApiResponse) => {
     subject: `Message From ${req.body.email}`,
     text: `
     Hello Francis, my name is ${req.body.name} i would love for you to design a ${req.body.projectType},
-    my budget is ${req.body.budget}. dditional information is ${req.body.additional}
+    my budget is ${req.body.budget}. Additional information is ${req.body.additional}
     `,
   };
 
