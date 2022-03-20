@@ -94,7 +94,7 @@ function Body() {
             return (
               <div
                 key={item.more}
-                className="w-full md:w-1/3 flex-wrap py-16 relative flex items-center flex-col px-11 border-b-[1px] md:border-b-0 md:border-r-[1px] last:border-0 border-gray-200 dark:border-slate-700"
+                className="w-full md:w-1/3 flex-wrap py-16 relative flex items-center flex-col px-11 border-b-[1px] md:border-b-0 md:border-r-[1px] last:border-0 border-gray-200 dark:border-slate-900"
                 data-aos="fade-in"
               >
                 <div className="relative flex justify-center items-center py-4">
