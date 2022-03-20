@@ -1,5 +1,5 @@
 import Axios from "axios";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 interface Props {
   setEmailRes: React.Dispatch<React.SetStateAction<string>>;
   setEmailSent: React.Dispatch<React.SetStateAction<boolean>>;
@@ -21,6 +21,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
       budget,
       additional,
     };
+    setIsSubmitting(true);
     Axios.post("/api/contact/", formData)
       .then((res) => {
         if (res.status === 200) {
@@ -31,6 +32,8 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
           setProjectType("");
           setBudget("");
           setAdditional("");
+          setIsSubmitting(false);
+
           setTimeout(() => {
             setEmailSent(false);
           }, 5000);
@@ -38,6 +41,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
       })
       .catch((err) => {
         console.log(err);
+        setIsSubmitting(false);
       });
   };
   return (
