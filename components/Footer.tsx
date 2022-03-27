@@ -35,7 +35,9 @@ function Footer() {
             value={{ color: "rgb(243 244 246)", size: "32px" }}
           >
             <Link href="https://github.com/Nchekwube1" passHref>
-              <FaGithubSquare />
+              <a>
+                <FaGithubSquare />
+              </a>
             </Link>
           </IconContext.Provider>
         </div>
@@ -47,7 +49,9 @@ function Footer() {
               href="https://linkedin.com/in/unekwe-francis-56485b1ba"
               passHref
             >
-              <ImLinkedin />
+              <a>
+                <ImLinkedin />
+              </a>
             </Link>
           </IconContext.Provider>
         </div>
@@ -56,7 +60,9 @@ function Footer() {
             value={{ color: "rgb(243 244 246)", size: "32px" }}
           >
             <Link href="https://twitter.com/FrancisUnekwe" passHref>
-              <FaTwitterSquare />
+              <a>
+                <FaTwitterSquare />
+              </a>
             </Link>
           </IconContext.Provider>
         </div>
@@ -65,7 +71,9 @@ function Footer() {
             value={{ color: "rgb(243 244 246)", size: "34px" }}
           >
             <Link href="mailto:unekwenchekwube@gmail.com" passHref>
-              <MdEmail />
+              <a>
+                <MdEmail />
+              </a>
             </Link>
           </IconContext.Provider>
         </div>
