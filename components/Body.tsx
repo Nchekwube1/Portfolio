@@ -160,7 +160,7 @@ function Body() {
             />
           </div>
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className=" relative w-56 flex justify-center items-center h-28 mb-4 md:mb-0 mx-3 py-8 px-8 shadow-lg rounded-lg"
           >
             <Image
