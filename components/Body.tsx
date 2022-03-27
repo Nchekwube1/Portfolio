@@ -3,7 +3,8 @@ import designer from "../public/designer.svg";
 import frontend from "../public/frontend.svg";
 import mentor from "../public/mentor.svg";
 import Image from "next/image";
-
+import digicore from "../public/digicoreLogo.png";
+import monkey from "../public/main-logo.png";
 function Body() {
   interface flexItem {
     icon: string;
@@ -141,6 +142,33 @@ function Body() {
               </div>
             );
           })}
+        </div>
+      </div>
+      <div className="relative flex flex-col justify-center items-center py-4 flex-wrap px-6 ">
+        <h3 className="md:text-2xl text-xl eurostile mb-6">
+          I am proud to have worked for some amazing companies:
+        </h3>
+        <div className="flex flex-col md:flex-row w-full justify-center items-center mb-6">
+          <div
+            data-aos="fade-right"
+            className=" relative w-56 flex justify-center items-center h-28 mb-4 md:mb-0 mx-3 py-12 px-8 shadow-lg rounded-lg"
+          >
+            <Image
+              alt="digicoreltd"
+              src={digicore}
+              className=" relative w-full h-full"
+            />
+          </div>
+          <div
+            data-aos="fade-left"
+            className=" relative w-56 flex justify-center items-center h-28 mb-4 md:mb-0 mx-3 py-12 px-8 shadow-lg rounded-lg"
+          >
+            <Image
+              alt="monkeymusicgroup"
+              src={monkey}
+              className=" relative w-full h-full"
+            />
+          </div>
         </div>
       </div>
     </>
