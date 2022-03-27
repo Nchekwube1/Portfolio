@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import '../styles/Home.module.css'
+import "../styles/Home.module.css";
 import { IconContext } from "react-icons";
 import hero from "../public/hero.svg";
 import profile from "../public/mf-avatar.svg";
 import { RiMoonClearFill, RiSunFill } from "react-icons/ri";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-
+import logo from "../public/mainLogoo.png";
 function Header() {
-
   const { theme, setTheme } = useTheme();
   const [darkMode, setDarkMode] = useState<boolean>(
     theme === "dark" ? true : false
@@ -30,7 +29,9 @@ function Header() {
             {!darkMode ? <RiSunFill /> : <RiMoonClearFill color="black" />}
           </IconContext.Provider>
         </div>
-        <div>logo here</div>
+        <div className="w-12 h-12 relative flex justify-center items-center">
+          <Image alt="logo" src={logo} className="relative w-full h-full" />
+        </div>
         <div className="md:mr-24 mr-12  relative">
           <button className="hover:text-white dark:hover:text-blue-100 hover:bg-blue-100 europa text-1xl dark:hover:bg-slate-700 dark:text-white cursor-pointer border-2 border-blue-100 dark:border-slate-700 px-7 py-3 rounded-full text-blue-100  ">
             Reach out
@@ -50,13 +51,11 @@ function Header() {
         </div>
       </div>
       <div className="relative flex justify-center items-center mt-16">
-        <Image src={profile}  alt='profile image'/>
+        <Image src={profile} alt="profile image" />
       </div>
       <div className="relative flex justify-center items-center mt-16">
-        <Image src={hero} alt='hero' />
+        <Image src={hero} alt="hero" />
       </div>
- 
-
     </div>
   );
 }
