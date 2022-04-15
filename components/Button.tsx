@@ -7,7 +7,10 @@ interface btnProps {
 function Button({ href, text }: btnProps) {
   return (
     <Link href={href} passHref={true}>
-      <button className="px-4 py-2  text-1xl text-gray-100 europa border-[1px] border-green-400 rounded-sm hover:bg-green-100  hover:text-black">
+      <button
+        type="button"
+        className="px-4 py-2  text-1xl text-gray-100 poppins-regular border-[1px] border-green-400 rounded-sm hover:bg-green-100  hover:text-black text-[14px]"
+      >
         {text}
       </button>
     </Link>
