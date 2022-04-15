@@ -18,15 +18,41 @@ function Header() {
   };
   return (
     <div className="relative">
-      <div className="relative w-full h-[5px] bg-green-400"></div>
+      <div className="fixed w-full h-[5px] bg-green-400"></div>
       <div className="relative w-full py-10 px-5 flex justify-between">
         <div className="relative w-12 h-12 bg-red-400 rounded-full"></div>
-        <div className="relative flex justify-center items-center">
+        <div className="relative hidden justify-center items-center md:block">
           <div className="relative flex  flex-row justify-center items-center">
-            <Button
-              href="https://docs.google.com/document/d/1qj0jUNRzkP_gAsl0NGUSsOGbrPUUwYSG3fzk3L0l4u0/edit?usp=sharing"
-              text="Resume"
-            />
+            <div className="relative flex flex-row justify-center items-center ">
+              <p className="text-green-400 text-sm">01.&nbsp;</p>
+              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+                <p className="eurostile">About</p>
+              </a>
+            </div>
+            <div className="relative flex flex-row justify-center items-center ml-3 ">
+              <p className="text-green-400 text-sm">02.&nbsp;</p>
+              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+                <p className="eurostile">Experience</p>
+              </a>
+            </div>
+            <div className="relative flex flex-row justify-center items-center ml-3">
+              <p className="text-green-400 text-sm">03.&nbsp;</p>
+              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+                <p className="eurostile">Projects</p>
+              </a>
+            </div>
+            <div className="relative flex flex-row justify-center items-center ml-3">
+              <p className="text-green-400 text-sm">04.&nbsp;</p>
+              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+                <p className="eurostile">Contact</p>
+              </a>
+            </div>
+            <div className="relative flex  flex-row justify-center items-center ml-5">
+              <Button
+                href="https://docs.google.com/document/d/1qj0jUNRzkP_gAsl0NGUSsOGbrPUUwYSG3fzk3L0l4u0/edit?usp=sharing"
+                text="Resume"
+              />
+            </div>
           </div>
         </div>
       </div>
