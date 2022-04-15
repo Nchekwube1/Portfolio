@@ -37,27 +37,27 @@ function Header() {
         <div className="flex justify-center items-center  relative">
           <div className="relative flex p2 flex-row justify-center items-center mr-4">
             <p className="text-green-400 text-sm">I.&nbsp;</p>
-            <p className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-              <a>About</a>
-            </p>
+            <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+              <p>About</p>
+            </a>
           </div>
           <div className="relative flex p2 flex-row justify-center items-center mr-4">
             <p className="text-green-400 text-sm">II.&nbsp;</p>
-            <p className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-              <a>Experience</a>
-            </p>
+            <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+              <p>Experience</p>
+            </a>
           </div>
           <div className="relative flex p2 flex-row justify-center items-center mr-4">
             <p className="text-green-400 text-sm">III.&nbsp;</p>
-            <p className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-              <a>Projects</a>
-            </p>
+            <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+              <p>Projects</p>
+            </a>
           </div>
           <div className="relative flex p2 flex-row justify-center items-center mr-4">
             <p className="text-green-400 text-sm">IV.&nbsp;</p>
-            <p className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-              <a>Contact</a>
-            </p>
+            <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+              <p>Contact</p>
+            </a>
           </div>
           <div className="relative flex p2 flex-row justify-center items-center mr-4 ml-6">
             <Button

@@ -3,8 +3,26 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Body from "../components/Body";
+import { useEffect, useState } from "react";
+import { CubeSpinner } from "react-spinners-kit";
 const Home: NextPage = () => {
-  return (
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+  return loading ? (
+    <div className="w-full h-screen bg-theme-50 flex justify-center items-center ">
+      <CubeSpinner
+        size={60}
+        frontColor="#66bb6a"
+        backColor="#4db6ac"
+        loading={loading}
+      />
+      ;
+    </div>
+  ) : (
     <div className="relative w-full bg-theme-50">
       <Head>
         <title>Unekwe Francis</title>
