@@ -6,7 +6,8 @@ import profile from "../public/mf-avatar.svg";
 import { RiMoonClearFill, RiSunFill } from "react-icons/ri";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import logo from "../public/mainLogoo.png";
+import Button from "./Button";
+// import logo from "../public/mainLogoo.png";
 function Header() {
   const { theme, setTheme } = useTheme();
   const [darkMode, setDarkMode] = useState<boolean>(
@@ -16,46 +17,55 @@ function Header() {
     return theme === "light" ? setTheme("dark") : setTheme("light");
   };
   return (
-    <div className="relative w-full">
-      <div className="flex justify-between items-center w-full  px-10 py-10">
-        <div
-          onClick={() => {
-            setDarkMode(!darkMode);
-            toggler();
-          }}
-          className="w-14 rounded-full h-14 flex justify-center shadow-inner cursor-pointer items-center bg-gray-100 absolute right-3 dark:bg-slate-700"
-        >
-          <IconContext.Provider value={{ className: "w-11 h-11 p-1" }}>
-            {!darkMode ? <RiSunFill /> : <RiMoonClearFill color="black" />}
-          </IconContext.Provider>
-        </div>
-        <div className="w-12 h-12 relative flex justify-center items-center">
-          <Image alt="logo" src={logo} className="relative w-full h-full" />
-        </div>
-        <div className="md:mr-24 mr-12  relative">
-          <button className="hover:text-white dark:hover:text-blue-100 hover:bg-blue-100 europa text-1xl dark:hover:bg-slate-700 dark:text-white cursor-pointer border-2 border-blue-100 dark:border-slate-700 px-7 py-3 rounded-full text-blue-100  ">
-            Reach out
-          </button>
+    <div className="relative">
+      <div className="relative w-full h-[5px] bg-green-400"></div>
+      <div className="relative w-full py-10 px-5 flex justify-between">
+        <div className="relative w-12 h-12 bg-red-400 rounded-full"></div>
+        <div className="relative flex justify-center items-center">
+          <div className="relative flex  flex-row justify-center items-center">
+            <Button
+              href="https://docs.google.com/document/d/1qj0jUNRzkP_gAsl0NGUSsOGbrPUUwYSG3fzk3L0l4u0/edit?usp=sharing"
+              text="Resume"
+            />
+          </div>
         </div>
       </div>
-      <div className="relative w-full flex justify-center items-center flex-col mt-24">
-        <div>
-          <h1 className="eurostile text-center text-6xl capitalize tracking-wide">
-            Software Engineer
-          </h1>
+      {/* <div className="relative w-full bg-red-200 py-10">
+        <div className="relative flex flex-row justify-between items-center ">
+          <div className="flex flex-row justify-center items-center  invisible md:visible">
+            <div className="relative flex flex-row justify-center items-center ">
+              <p className="text-green-400 text-sm">I.&nbsp;</p>
+              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+                <p className="eurostile">About</p>
+              </a>
+            </div>
+            <div className="relative flex flex-row justify-center items-center ">
+              <p className="text-green-400 text-sm">II.&nbsp;</p>
+              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+                <p className="eurostile">Experience</p>
+              </a>
+            </div>
+            <div className="relative flex flex-row justify-center items-center ">
+              <p className="text-green-400 text-sm">III.&nbsp;</p>
+              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+                <p className="eurostile">Projects</p>
+              </a>
+            </div>
+            <div className="relative flex flex-row justify-center items-center ">
+              <p className="text-green-400 text-sm">IV.&nbsp;</p>
+              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
+                <p className="eurostile">Contact</p>
+              </a>
+            </div>
+            <div className="relative flex  flex-row justify-center items-center">
+              <Button
+                href="https://docs.google.com/document/d/1qj0jUNRzkP_gAsl0NGUSsOGbrPUUwYSG3fzk3L0l4u0/edit?usp=sharing"
+                text="Resume"
+              />
+            </div>
+          </div>
         </div>
-        <div className="pt-5">
-          <h3 className="europa text-2xl text-center tracking-wide dark:text-blue-100 px-2">
-            I design and code softwares best suited for your needs
-          </h3>{" "}
-        </div>
-      </div>
-      <div className="relative flex justify-center items-center mt-16">
-        <Image src={profile} alt="profile image" />
-      </div>
-      <div className="relative flex justify-center items-center mt-16">
-        <Image src={hero} alt="hero" />
-      </div>
+      </div> */}
     </div>
   );
 }
