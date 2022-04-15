@@ -66,7 +66,7 @@ function Body() {
   ];
   return (
     <>
-      <div className="relative w-full pt-32 pb-48 flex-col bg-blue-100 flex justify-center items-center dark:bg-black px-5 md:px-0">
+      {/* <div className="relative w-full pt-32 pb-48 flex-col bg-theme-100 flex justify-center items-center dark:bg-black px-5 md:px-0">
         <h1
           className="text-center eurostile text-3xl font-bold poppins-regular text-white mb-6"
           data-aos="fade-in"
@@ -78,7 +78,7 @@ function Body() {
           data-aos-delay="100"
           data-aos="fade-right"
         >
-          <h1 className="text-[20px] text-gray-100 dark:text-blue-100 europa">
+          <h1 className="text-[20px] text-gray-100 dark:text-theme-100 europa">
             Since beginning my journey as a software developer, I&apos;ve done
             remote work for agencies, worked for startups, and collaborated with
             talented individuals to create amazing products and designs for both
@@ -87,9 +87,9 @@ function Body() {
             design problem at a time.
           </h1>
         </div>
-      </div>
+      </div> */}
 
-      <div className="relative flex justify-center items-center mb-5">
+      {/* <div className="relative flex justify-center items-center mb-5">
         <div className="relative -top-28 w-5/6 shadow-lg flex dark:shadow-2xl flex-col md:flex-row rounded-xl bg-white dark:bg-dark-100">
           {flexItems.map((item, index) => {
             return (
@@ -143,8 +143,8 @@ function Body() {
             );
           })}
         </div>
-      </div>
-      <div className="relative flex flex-col justify-center items-center py-4 flex-wrap px-6 ">
+      </div> */}
+      {/* <div className="relative flex flex-col justify-center items-center py-4 flex-wrap px-6 ">
         <h3 className="md:text-2xl text-xl eurostile mb-6">
           I am proud to have worked for some amazing companies:
         </h3>
@@ -170,7 +170,7 @@ function Body() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -134,7 +134,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="px-16 border-blue-100 text-blue-100 hover:bg-blue-100 hover:text-white dark:border-slate-700 dark:text-white dark:hover:bg-slate-700 dark:hover:text-blue-100 relative border-2 rounded-full py-4 indent-3 text-xl europa font-light bg-transparent outline-none "
+              className="px-16 border-theme-100 text-theme-100 hover:bg-theme-100 hover:text-white dark:border-slate-700 dark:text-white dark:hover:bg-slate-700 dark:hover:text-theme-100 relative border-2 rounded-full py-4 indent-3 text-xl europa font-light bg-transparent outline-none "
             >
               Submit
             </button>
