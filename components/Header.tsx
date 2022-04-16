@@ -10,6 +10,7 @@ function Header() {
   const tabItems = ["About", "Experience", "Projects", "Contact"];
   const changeTab = (index: number) => {
     setIndexIndex(index);
+    setShowMenu(!showMenu);
   };
   const setMenu = () => {
     setShowMenu(!showMenu);
@@ -17,7 +18,7 @@ function Header() {
   return (
     <div className="relative">
       {showMenu && (
-        <div className="absolute bg-white/8050 backdrop-blur-sm z-50 w-screen h-screen top-0 right-0 bottom-0">
+        <div className="absolute bg-white/8050 backdrop-blur-sm z-50 w-screen h-screen top-0 right-0 bottom-0 transition">
           <div className="absolute w-4/5 h-full bg-theme-50 right-0 flex-col ">
             <div
               onClick={setMenu}
@@ -34,7 +35,7 @@ function Header() {
                 <div
                   onClick={() => changeTab(index)}
                   key={`${items}-${index}`}
-                  className={`relative flex flex-row justify-center items-center ml-6 `}
+                  className={`relative flex flex-row justify-center items-center ml-6  p-8`}
                 >
                   <a
                     className={`text-gray-100 text-lg cursor-pointer hover:text-green-400 ${
