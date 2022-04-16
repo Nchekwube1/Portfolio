@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       ;
     </div>
   ) : (
-    <div className="relative w-full bg-theme-50">
+    <div className="relative w-full bg-theme-50 scroll-smooth">
       <Head>
         <title>Unekwe Francis</title>
         <meta

@@ -10,7 +10,6 @@ function Header() {
   const tabItems = ["About", "Experience", "Projects", "Contact"];
   const changeTab = (index: number) => {
     setIndexIndex(index);
-    setShowMenu(!showMenu);
   };
   const setMenu = () => {
     setShowMenu(!showMenu);
@@ -18,7 +17,7 @@ function Header() {
   return (
     <div className="relative">
       {showMenu && (
-        <div className="absolute bg-white/8050 backdrop-blur-sm z-50 w-screen h-screen top-0 right-0 bottom-0 transition">
+        <div className="absolute bg-white/5 overflow-hidden backdrop-blur-sm z-50 w-screen h-screen top-0 right-0 bottom-0 transition">
           <div className="absolute w-4/5 h-full bg-theme-50 right-0 flex-col ">
             <div
               onClick={setMenu}
@@ -33,7 +32,11 @@ function Header() {
             {tabItems.map((items, index) => {
               return (
                 <div
-                  onClick={() => changeTab(index)}
+                  onClick={() => {
+                    setShowMenu(!showMenu);
+
+                    changeTab(index);
+                  }}
                   key={`${items}-${index}`}
                   className={`relative flex flex-row justify-center items-center ml-6  p-8`}
                 >
@@ -60,7 +63,7 @@ function Header() {
                 <div
                   onClick={() => changeTab(index)}
                   key={`${items}-${index}`}
-                  className={`relative flex flex-row justify-center items-center bg-blue-50  `}
+                  className={`relative flex flex-row justify-center items-center bg-blue-50  ml-6`}
                 >
                   <a
                     className={`text-gray-100 text-[13px] cursor-pointer hover:text-green-400 ${
@@ -76,6 +79,7 @@ function Header() {
             <div className="relative flex  flex-row justify-center items-center ml-6">
               <Button
                 href="https://docs.google.com/document/d/1qj0jUNRzkP_gAsl0NGUSsOGbrPUUwYSG3fzk3L0l4u0/edit?usp=sharing"
+                // href="../public/Resume.pdf"
                 text="Resume"
               />
             </div>
