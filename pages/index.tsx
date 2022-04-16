@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Body from "../components/Body";
+import About from "../components/About";
 import { useEffect, useState } from "react";
 import { CubeSpinner } from "react-spinners-kit";
 const Home: NextPage = () => {
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Body />
+      <About />
       <Footer />
     </div>
   );

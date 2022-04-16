@@ -1,97 +1,96 @@
 import React, { useState } from "react";
 import "../styles/Home.module.css";
 import { IconContext } from "react-icons";
-import hero from "../public/hero.svg";
-import profile from "../public/mf-avatar.svg";
-import { RiMoonClearFill, RiSunFill } from "react-icons/ri";
-import { useTheme } from "next-themes";
-import Image from "next/image";
+import { BiMenuAltRight } from "react-icons/bi";
+import { CgClose } from "react-icons/cg";
 import Button from "./Button";
-// import logo from "../public/mainLogoo.png";
 function Header() {
-  const { theme, setTheme } = useTheme();
-  const [darkMode, setDarkMode] = useState<boolean>(
-    theme === "dark" ? true : false
-  );
-  const toggler = () => {
-    return theme === "light" ? setTheme("dark") : setTheme("light");
+  const [activeIndex, setIndexIndex] = useState(0);
+  const [showMenu, setShowMenu] = useState(false);
+  const tabItems = ["About", "Experience", "Projects", "Contact"];
+  const changeTab = (index: number) => {
+    setIndexIndex(index);
+  };
+  const setMenu = () => {
+    setShowMenu(!showMenu);
   };
   return (
     <div className="relative">
-      <div className="fixed w-full h-[5px] bg-green-400"></div>
-      <div className="relative w-full py-10 px-5 flex justify-between">
-        <div className="relative w-12 h-12 bg-red-400 rounded-full"></div>
+      {showMenu && (
+        <div className="absolute bg-white/8050 backdrop-blur-sm z-50 w-screen h-screen top-0 right-0 bottom-0">
+          <div className="absolute w-4/5 h-full bg-theme-50 right-0 flex-col ">
+            <div
+              onClick={setMenu}
+              className="z-50 w-full relative justify-end p-5 items-end right-0 flex md:hidden"
+            >
+              <IconContext.Provider value={{ color: "#66bb6a", size: "50" }}>
+                <div>
+                  <CgClose />
+                </div>
+              </IconContext.Provider>
+            </div>
+            {tabItems.map((items, index) => {
+              return (
+                <div
+                  onClick={() => changeTab(index)}
+                  key={`${items}-${index}`}
+                  className={`relative flex flex-row justify-center items-center ml-6 `}
+                >
+                  <a
+                    className={`text-gray-100 text-lg cursor-pointer hover:text-green-400 ${
+                      index === activeIndex && "text-green-400"
+                    }`}
+                  >
+                    <p className="eurostile">{items}</p>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+      <div className="z-10 fixed w-full h-[5px] bg-green-400"></div>
+      <div className="relative w-full py-6 px-5 flex justify-between">
+        <div className="relative w-12 h-12 rounded-full"></div>
         <div className="relative hidden justify-center items-center md:block">
           <div className="relative flex  flex-row justify-center items-center">
-            <div className="relative flex flex-row justify-center items-center ">
-              <p className="text-green-400 text-sm">01.&nbsp;</p>
-              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-                <p className="eurostile">About</p>
-              </a>
-            </div>
-            <div className="relative flex flex-row justify-center items-center ml-3 ">
-              <p className="text-green-400 text-sm">02.&nbsp;</p>
-              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-                <p className="eurostile">Experience</p>
-              </a>
-            </div>
-            <div className="relative flex flex-row justify-center items-center ml-3">
-              <p className="text-green-400 text-sm">03.&nbsp;</p>
-              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-                <p className="eurostile">Projects</p>
-              </a>
-            </div>
-            <div className="relative flex flex-row justify-center items-center ml-3">
-              <p className="text-green-400 text-sm">04.&nbsp;</p>
-              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-                <p className="eurostile">Contact</p>
-              </a>
-            </div>
-            <div className="relative flex  flex-row justify-center items-center ml-5">
+            {tabItems.map((items, index) => {
+              return (
+                <div
+                  onClick={() => changeTab(index)}
+                  key={`${items}-${index}`}
+                  className={`relative flex flex-row justify-center items-center bg-blue-50  `}
+                >
+                  <a
+                    className={`text-gray-100 text-[13px] cursor-pointer hover:text-green-400 ${
+                      index === activeIndex && "text-green-400"
+                    }`}
+                  >
+                    <p className="eurostile">{items}</p>
+                  </a>
+                </div>
+              );
+            })}
+
+            <div className="relative flex  flex-row justify-center items-center ml-6">
               <Button
                 href="https://docs.google.com/document/d/1qj0jUNRzkP_gAsl0NGUSsOGbrPUUwYSG3fzk3L0l4u0/edit?usp=sharing"
                 text="Resume"
               />
             </div>
           </div>
+        </div>
+        <div
+          onClick={setMenu}
+          className="relative block justify-center items-center md:hidden"
+        >
+          <IconContext.Provider value={{ color: "#66bb6a", size: "50" }}>
+            <div>
+              <BiMenuAltRight />
+            </div>
+          </IconContext.Provider>
         </div>
       </div>
-      {/* <div className="relative w-full bg-red-200 py-10">
-        <div className="relative flex flex-row justify-between items-center ">
-          <div className="flex flex-row justify-center items-center  invisible md:visible">
-            <div className="relative flex flex-row justify-center items-center ">
-              <p className="text-green-400 text-sm">I.&nbsp;</p>
-              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-                <p className="eurostile">About</p>
-              </a>
-            </div>
-            <div className="relative flex flex-row justify-center items-center ">
-              <p className="text-green-400 text-sm">II.&nbsp;</p>
-              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-                <p className="eurostile">Experience</p>
-              </a>
-            </div>
-            <div className="relative flex flex-row justify-center items-center ">
-              <p className="text-green-400 text-sm">III.&nbsp;</p>
-              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-                <p className="eurostile">Projects</p>
-              </a>
-            </div>
-            <div className="relative flex flex-row justify-center items-center ">
-              <p className="text-green-400 text-sm">IV.&nbsp;</p>
-              <a className="text-gray-100 text-sm cursor-pointer hover:text-green-400">
-                <p className="eurostile">Contact</p>
-              </a>
-            </div>
-            <div className="relative flex  flex-row justify-center items-center">
-              <Button
-                href="https://docs.google.com/document/d/1qj0jUNRzkP_gAsl0NGUSsOGbrPUUwYSG3fzk3L0l4u0/edit?usp=sharing"
-                text="Resume"
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }
