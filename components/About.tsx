@@ -6,172 +6,56 @@ import Image from "next/image";
 import digicore from "../public/digicoreLogo.png";
 import monkey from "../public/main-logo.png";
 function Body() {
-  interface flexItem {
-    icon: string;
-    title: string;
-    desc: string;
-    tools: string;
-    toolsStat: string[];
-    more: string;
-    moreStat: string[];
-  }
-  const flexItems: flexItem[] = [
-    {
-      icon: frontend,
-      title: "Software developer",
-      desc: "I love to design things from scratch, and enjoy bringing brilliant software ideas to life",
-      tools: "Fluent in",
-      toolsStat: [
-        "HTML5,",
-        "CSS,",
-        "Sass,",
-        "Javascript,",
-        "Typescript,",
-        "Python,",
-        "Php",
-      ],
-      more: "Dev Tools",
-      moreStat: [
-        "VS Code",
-        "TailwindCss",
-        "Chakra UI",
-        "Material UI",
-        "Codepen",
-        "Github",
-        "Gitlab",
-        "GraphQL",
-        "Redux Toolkit",
-      ],
-    },
-    {
-      icon: designer,
-      title: "Piping engineer",
-      desc: "I have junior level experience in piping engineering and planning, i would love to explore more in this field soon",
-      tools: "Fluent in",
-      toolsStat: ["AutoCAD,", "PDMS,"],
-      more: "Utility Tools",
-      moreStat: ["MS Excel"],
-    },
-    {
-      icon: mentor,
-      title: "Tutor",
-      desc: "I host different classes for junior developers to transition into mid-level devs. This gives me so much joy and i hope to transition full time to this",
-      tools: "Inspirations",
-      toolsStat: ["Web development,", "Software development,", "UI / UX,"],
-      more: "Tutor Stats",
-      moreStat: [
-        "Less than a year of tutoring, feels like much more though 😀",
-      ],
-    },
-  ];
   return (
-    <>
-      {/* <div className="relative w-full pt-32 pb-48 flex-col bg-theme-100 flex justify-center items-center dark:bg-black px-5 md:px-0">
-        <h1
-          className="text-center eurostile text-3xl font-bold poppins-regular text-white mb-6"
-          data-aos="fade-in"
-        >
-          Hi, I&apos;m Francis. Great to have you here
-        </h1>
-        <div
-          className="relative w-4/5 md:w-3/5 flex-wrap text-center"
-          data-aos-delay="100"
-          data-aos="fade-right"
-        >
-          <h1 className="text-[20px] text-gray-100 dark:text-theme-100 europa">
-            Since beginning my journey as a software developer, I&apos;ve done
-            remote work for agencies, worked for startups, and collaborated with
-            talented individuals to create amazing products and designs for both
-            business and consumer use. I&apos;m quite confident in my abilities,
-            naturally curious, and always working on improving my skillset one
-            design problem at a time.
-          </h1>
+    <div className="py-20 px-6 md:py-36 md:px-16 relative">
+      <div className="relative w-full h-[80vh] flex flex-col  bg-theme-50 ">
+        <div className="relative">
+          <h2 className="source-regular text-lg md:text-2xl text-green-400">
+            Hi, my name is
+          </h2>
         </div>
-      </div> */}
-
-      {/* <div className="relative flex justify-center items-center mb-5">
-        <div className="relative -top-28 w-5/6 shadow-lg flex dark:shadow-2xl flex-col md:flex-row rounded-xl bg-white dark:bg-dark-100">
-          {flexItems.map((item, index) => {
-            return (
-              <div
-                key={item.more}
-                className="w-full md:w-1/3 flex-wrap py-16 relative flex items-center flex-col px-11 border-b-[1px] md:border-b-0 md:border-r-[1px] last:border-0 border-gray-200 dark:border-slate-900"
-                data-aos="fade-in"
-              >
-                <div className="relative flex justify-center items-center py-4">
-                  <Image src={item.icon} alt={`${item.desc}-${index}`} />
-                </div>
-                <div className="relative flex justify-center items-center py-4">
-                  <h1 className="font-bold tracking-wider dark:text-white uppercase text-20 eurostile">
-                    {item.title}
-                  </h1>
-                </div>
-                <div className="relative flex justify-center items-center py-4">
-                  <h1 className="text-[16px] font-light text-gray-900 dark:text-white tracking-wider text-center pb-6 europa">
-                    {item.desc}
-                  </h1>
-                </div>
-                <div className="relative flex justify-center items-center">
-                  <h1 className=" capitalize text-[19px] tracking-wider text-center text-blue-100 europa">
-                    {item.tools + ":"}
-                  </h1>
-                </div>
-                <div className="relative flex justify-center items-center py-2">
-                  <h1 className="capitalize text-[16px] font-light tracking-wider dark:text-white text-center pb-10 text-gray-900 europa">
-                    {item.toolsStat.map((each) => (
-                      <p key={each} className="inline">
-                        {each + " "}
-                      </p>
-                    ))}
-                  </h1>
-                </div>
-                <div className="relative flex justify-center items-center">
-                  <h1 className=" capitalize text-[19px] tracking-wider text-center text-blue-100 europa">
-                    {item.more + ":"}
-                  </h1>
-                </div>
-                <div className="relative flex justify-center items-center py-2">
-                  <h1 className="capitalize text-[16px] font-light tracking-wider text-center dark:text-white  text-gray-900 europa">
-                    {item.moreStat.map((each) => (
-                      <p key={each} className="mb-3">
-                        {each + " "}
-                      </p>
-                    ))}
-                  </h1>
-                </div>
+        <div className="relative py-5">
+          <h2 className="source-bold  text-4xl md:text-6xl lg:text-9xl  text-white/95">
+            Unekwe Francis.
+          </h2>
+        </div>
+        <div className="relative">
+          <h2 className="source-bold  text-3xl md:text-6xl lg:text-6xl text-white/70">
+            I develop softwares.
+          </h2>
+        </div>
+      </div>
+      <div className="text-white">
+        <div className="flex flex-col relative">
+          <div>
+            <h2 className="text-4xl source-bold">About Me</h2>
+          </div>
+          <div className="w-8 rounded-lg relative h-2 bg-green-400"></div>
+          <div className="flex flex-col lg:flex-row">
+            <div className="mt-5 w-full lg:w-1/2 source-regular py-2 text-white/75">
+              Hello my name is Francis and i love to build engaging user
+              interfaces for both web and mobile applications. Since i started
+              in this journey i have built lots of projects through consistent
+              practice, building, breaking and fixing things. I love what i do
+              and i am always open to learn new technologies as i find building
+              web and mobile applications very fun and i always strive to get
+              better at what i do.
+              <br />
+              <br />I started my career as a web developer before exploring into
+              mobile app developement and in this timeframe i have collaborated
+              with talented individuals, worked freelance and also had the
+              opportunity to work with some amazing companies.
+            </div>
+            <div className="relative w-full lg:w-1/2 h-full  ">
+              <div className="w-full lg:w-3/4 relative h-96">
+                <div className="image bg-black z-50 rounded-xl w-[95%] lg:w-2/3 h-[90%] absolute right-6 bottom-6"></div>
+                <div className="border-green-400 border-2 w-[95%] lg:w-2/3 h-[90%] rounded-xl  absolute right-1 bottom-0"></div>
               </div>
-            );
-          })}
-        </div>
-      </div> */}
-      {/* <div className="relative flex flex-col justify-center items-center py-4 flex-wrap px-6 ">
-        <h3 className="md:text-2xl text-xl eurostile mb-6">
-          I am proud to have worked for some amazing companies:
-        </h3>
-        <div className="flex flex-col md:flex-row w-full justify-center items-center mb-6">
-          <div
-            data-aos="fade-right"
-            className=" relative w-56 flex justify-center items-center h-28 mb-4 md:mb-0 mx-3 py-12 px-8 shadow-lg rounded-lg"
-          >
-            <Image
-              alt="digicoreltd"
-              src={digicore}
-              className=" relative w-full h-full"
-            />
-          </div>
-          <div
-            data-aos="fade-right"
-            className=" relative w-56 flex justify-center items-center h-28 mb-4 md:mb-0 mx-3 py-8 px-8 shadow-lg rounded-lg"
-          >
-            <Image
-              alt="monkeymusicgroup"
-              src={monkey}
-              className=" relative w-full h-full"
-            />
+            </div>
           </div>
         </div>
-      </div> */}
-    </>
+      </div>
+    </div>
   );
 }
 
