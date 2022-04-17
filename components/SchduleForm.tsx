@@ -25,6 +25,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
     Axios.post("/api/contact/", formData)
       .then((res) => {
         if (res.status === 200) {
+          window.scrollTo(0, 0);
           setEmailSent(true);
           setEmailRes(res.data);
           setName("");
@@ -47,7 +48,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
   return (
     <div className="relative w-full">
       <div className="relative w-full px-8 mt-10" data-aos="fade-up">
-        <h2 className="eurostile text-center text-4xl capitalize tracking-wide">
+        <h2 className="eurostile text-white text-center text-4xl capitalize tracking-wide">
           I&apos;m Buzzing to hear about your projects. Lets get started
         </h2>
       </div>
@@ -59,7 +60,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
         >
           <div className="relative w-full flex flex-col md:flex-row justify-evenly items-center ">
             <div className="flex flex-col w-full md:w-2/5 mt-4 ">
-              <label className="text-lg eurostile">
+              <label className="text-lg eurostile text-white ">
                 Name:
                 <input
                   required
@@ -67,12 +68,12 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   name="Name"
-                  className="w-full relative border-gray-200 border-2 rounded-md py-4 indent-3 text-xl europa font-light bg-transparent outline-none mt-4"
+                  className="w-full relative border-white/50 border-2 rounded-md py-4 indent-3 text-xl europa font-light bg-transparent outline-none mt-4"
                 />
               </label>
             </div>
             <div className="flex flex-col w-full md:w-2/5 mt-4 ">
-              <label className="text-lg eurostile">
+              <label className="text-lg eurostile text-white ">
                 Email:
                 <input
                   required
@@ -80,21 +81,21 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
                   name="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full relative border-gray-200 border-2 rounded-md py-4 indent-3 text-xl europa font-light bg-transparent outline-none mt-4"
+                  className="w-full relative border-white/50 border-2 rounded-md py-4 indent-3 text-xl europa font-light bg-transparent outline-none mt-4"
                 />
               </label>
             </div>
           </div>
           <div className="relative w-full flex-col md:flex-row flex justify-evenly items-center">
             <div className="flex flex-col w-full md:w-2/5 mt-4 ">
-              <label className="text-lg eurostile">
+              <label className="text-lg eurostile text-white ">
                 Project type:
                 <select
                   name="ProjectType"
                   required
                   value={projectType}
                   onChange={(e) => setProjectType(e.target.value)}
-                  className="w-full relative border-gray-200 border-2 rounded-md py-4 indent-3 text-xl europa font-light pr-3 bg-transparent outline-none mt-4 "
+                  className="w-full relative border-white/50 border-2 rounded-md py-4 indent-3 text-xl europa font-light pr-3 bg-transparent outline-none mt-4 "
                 >
                   <option value=""></option>
                   <option value="Web app">Web app</option>
@@ -103,7 +104,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
               </label>
             </div>
             <div className="flex flex-col w-full md:w-2/5  mt-4">
-              <label className="text-lg eurostile">
+              <label className="text-lg eurostile text-white ">
                 Budget:
                 <input
                   required
@@ -111,14 +112,14 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
                   onChange={(e) => setBudget(e.target.value)}
                   type="text"
                   name="Budget"
-                  className="w-full relative border-gray-200 border-2 rounded-md py-4 indent-3 text-xl europa font-light bg-transparent outline-none mt-4"
+                  className="w-full relative border-white/50 border-2 rounded-md py-4 indent-3 text-xl europa font-light bg-transparent outline-none mt-4"
                 />
               </label>
             </div>
           </div>
 
           <div className="flex flex-col w-full md:w-5/6 mt-4">
-            <label className="text-lg eurostile">
+            <label className="text-lg eurostile text-white ">
               Additional information:
               <textarea
                 required
@@ -126,7 +127,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
                 value={additional}
                 onChange={(e) => setAdditional(e.target.value)}
                 name="Additional"
-                className="w-full relative border-gray-200 border-2 rounded-md py-4 indent-3 text-xl europa font-light bg-transparent outline-none mt-4"
+                className="w-full relative border-white/50 border-2 rounded-md py-4 indent-3 text-xl europa font-light bg-transparent outline-none mt-4"
               />
             </label>
           </div>
@@ -134,7 +135,7 @@ function SchduleForm({ setEmailRes, setEmailSent }: Props) {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="px-16 border-theme-100 text-theme-100 hover:bg-theme-100 hover:text-white dark:border-slate-700 dark:text-white dark:hover:bg-slate-700 dark:hover:text-theme-100 relative border-2 rounded-full py-4 indent-3 text-xl europa font-light bg-transparent outline-none "
+              className="px-16 border-green-400 relative border-2 rounded-md py-4 indent-3 text-white text-xl europa font-light bg-transparent outline-none "
             >
               Submit
             </button>

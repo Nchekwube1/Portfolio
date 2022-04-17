@@ -5,10 +5,11 @@ import mentor from "../public/mentor.svg";
 import Image from "next/image";
 import digicore from "../public/digicoreLogo.png";
 import monkey from "../public/main-logo.png";
+import Button from "./Button";
 function Body() {
   return (
-    <div className="py-20 px-6 md:py-36 md:px-16 relative">
-      <div className="relative w-full h-[80vh] flex flex-col  bg-theme-50 ">
+    <div className="py-10 px-6 md:py-36 md:px-16 relative">
+      <div className="relative w-full h-[75vh] flex flex-col  bg-theme-50 ">
         <div className="relative">
           <h2 className="source-regular text-lg md:text-2xl text-green-400">
             Hi, my name is
@@ -24,8 +25,11 @@ function Body() {
             I develop softwares.
           </h2>
         </div>
+        <div className="pt-9">
+          <Button href="/Schedule" text="Start a project" />
+        </div>
       </div>
-      <div id="About" className="text-white">
+      <div id="About" className="text-white py-8 lg:py-0">
         <div className="flex flex-col relative">
           <div>
             <h2 className="text-4xl source-bold">About Me</h2>

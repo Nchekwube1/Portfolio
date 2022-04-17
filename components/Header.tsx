@@ -42,7 +42,7 @@ function Header() {
                   className={`relative flex flex-row justify-center items-center ml-6  p-8`}
                 >
                   <a
-                    href="#About"
+                    href={`#${items}`}
                     className={`text-gray-100 text-lg cursor-pointer hover:text-green-400 ${
                       index === activeIndex && "text-green-400"
                     }`}

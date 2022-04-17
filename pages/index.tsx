@@ -13,7 +13,7 @@ const Home: NextPage = () => {
     }, 2500);
   }, []);
   return loading ? (
-    <div className="w-full h-screen bg-theme-50 flex justify-center items-center ">
+    <div className="w-full h-screen bg-theme-50 flex justify-center items-center scroll-smooth">
       <CubeSpinner
         size={60}
         frontColor="#66bb6a"
