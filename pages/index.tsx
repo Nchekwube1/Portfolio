@@ -6,12 +6,22 @@ import About from "../components/About";
 import { useEffect, useRef, useState } from "react";
 import { CubeSpinner } from "react-spinners-kit";
 const Home: NextPage = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 2500);
   }, []);
+
+  useEffect(() => {
+    if (showMenu === true) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [showMenu]);
   return loading ? (
     <div className="w-full h-screen bg-theme-50 flex justify-center items-center scroll-smooth">
       <CubeSpinner
@@ -32,7 +42,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Header setShowMenu={setShowMenu} showMenu={showMenu} />
       <About />
       <Footer />
     </div>

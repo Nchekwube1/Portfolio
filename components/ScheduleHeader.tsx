@@ -7,7 +7,7 @@ import logo from "../public/mainLogoo.png";
 
 function ScheduleHeader() {
   return (
-    <div className="relative w-full py-10 px-10" data-aos="fade-up">
+    <div className="relative w-full py-10 px-3" data-aos="fade-up">
       <div className="relative w-full flex items-center justify-end px-5">
         {/* <div className="w-12 h-12 relative flex justify-center items-center">
           <Image alt="logo" src={logo} className="relative w-full h-full" />
@@ -15,7 +15,7 @@ function ScheduleHeader() {
 
         <div className="cursor-pointer">
           <Link href={"/"} passHref={true}>
-            <VscChromeClose size={28} color={"#7510F7"} />
+            <VscChromeClose size={28} color={"#66bb6a"} />
           </Link>
         </div>
       </div>
