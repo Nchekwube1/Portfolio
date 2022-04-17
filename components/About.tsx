@@ -25,7 +25,7 @@ function Body() {
           </h2>
         </div>
       </div>
-      <div className="text-white">
+      <div id="About" className="text-white">
         <div className="flex flex-col relative">
           <div>
             <h2 className="text-4xl source-bold">About Me</h2>
@@ -46,7 +46,7 @@ function Body() {
               with talented individuals, worked freelance and also had the
               opportunity to work with some amazing companies.
             </div>
-            <div className="relative w-full lg:w-1/2 h-full  ">
+            <div className="relative w-full md:w-1/2 lg:w-1/2 h-full md:ml-40 lg:ml-0">
               <div className="w-full lg:w-3/4 relative h-96">
                 <div className="image bg-black z-50 rounded-xl w-[95%] lg:w-2/3 h-[90%] absolute right-6 bottom-6"></div>
                 <div className="border-green-400 border-2 w-[95%] lg:w-2/3 h-[90%] rounded-xl  absolute right-1 bottom-0"></div>
