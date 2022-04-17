@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div
       className="relative 
-       mt-6  w-full pt-20 flex items-center justify-center flex-col"
+       mt-6  w-full flex items-center justify-center flex-col"
       // data-aos="zoom-in"
     >
       <div className="flex flex-row justify-center items-center w-full p-6">

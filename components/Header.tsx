@@ -4,6 +4,7 @@ import { IconContext } from "react-icons";
 import { BiMenuAltRight } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
 import Button from "./Button";
+import Link from "next/link";
 function Header() {
   const [activeIndex, setIndexIndex] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
@@ -41,6 +42,7 @@ function Header() {
                   className={`relative flex flex-row justify-center items-center ml-6  p-8`}
                 >
                   <a
+                    href="#About"
                     className={`text-gray-100 text-lg cursor-pointer hover:text-green-400 ${
                       index === activeIndex && "text-green-400"
                     }`}
@@ -66,6 +68,7 @@ function Header() {
                   className={`relative flex flex-row justify-center items-center bg-blue-50  ml-6`}
                 >
                   <a
+                    href={`#${items}`}
                     className={`text-gray-100 text-[13px] cursor-pointer hover:text-green-400 ${
                       index === activeIndex && "text-green-400"
                     }`}
