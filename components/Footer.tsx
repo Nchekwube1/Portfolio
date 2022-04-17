@@ -4,7 +4,6 @@ import { IconContext } from "react-icons";
 import { ImLinkedin } from "react-icons/im";
 import { FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Button from "./Button";
 function Footer() {
   return (
     <div
