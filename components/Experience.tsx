@@ -28,15 +28,18 @@ function Experience() {
     },
   ];
   return (
-    <div id="Experience " className="text-white py-8 lg:py-0 px-6  md:px-16">
+    <div
+      id="Experience "
+      className="text-white py-8 lg:py-0 px-6  md:px-16 w-full"
+    >
       <div className="flex flex-col relative">
         <div>
           <h2 className="text-3xl lg:text-4xl source-bold">Experience</h2>
         </div>
         <div className="w-8 rounded-lg relative h-2 bg-green-400"></div>
       </div>
-      <div className="relative flex w-full py-9 px-16  ">
-        <div className="relative  flex flex-col">
+      <div className="relative flex flex-col md:flex-row w-full py-9 md:px-16 ">
+        <div className="relative  flex flex-row md:flex-col  overflow-scroll justify-center">
           {jobsArr.map((job, index) => {
             return (
               <div
@@ -44,21 +47,21 @@ function Experience() {
                 onClick={() => {
                   setCurrent(index);
                 }}
-                className={`relative border-l-2 hover:bg-green-400 hover:bg-opacity-5 hover:text-green-400 rounded-r-sm ${
+                className={`relative border-b-2 md:border-b-0 md:border-l-2  w-full hover:bg-green-400 hover:bg-opacity-5 hover:text-green-400 rounded-r-sm ${
                   index !== current && "border-white/40 text-white/70"
                 }  py-3 px-5 cursor-pointer  ${
                   index === current &&
-                  "border-green-400 text-green-400 bg-green-400 bg-opacity-5"
+                  "border-green-400 text-green-400 bg-green-400 bg-opacity-5 flex-nowrap"
                 }`}
               >
-                <h2>{job}</h2>
+                <h2 className="relative flex-nowrap">{job}</h2>
               </div>
             );
           })}
         </div>
-        <div className="relative  px-7 ">
+        <div className="relative  px-7 animate-transition">
           {
-            <>
+            <div className="transition-opacity ease-in-out delay-150 md:mt-0 mt-9 ">
               <h2 className="relative capitalize eurostile text-xl">
                 {Roles[current].Role}
               </h2>
@@ -72,7 +75,7 @@ function Experience() {
                     className="relative my-7 flex items-center "
                   >
                     <div className="w-2 h-2 border-green-400 border-[1px] bg-transparent  mr-4 rounded-full"></div>
-                    <div>
+                    <div className=" ">
                       <h4 className="relative source-regular text-base text-white/70">
                         {task}
                       </h4>
@@ -80,7 +83,7 @@ function Experience() {
                   </div>
                 );
               })}
-            </>
+            </div>
           }
         </div>
       </div>

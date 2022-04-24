@@ -21,6 +21,15 @@ module.exports = {
           100: "#66bb6a",
         },
       },
+      keyframes: {
+        wave: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        transition: "wave .25s linear",
+      },
     },
   },
   darkMode: "class",
