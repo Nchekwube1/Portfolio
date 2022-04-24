@@ -6,6 +6,7 @@ import Image from "next/image";
 import digicore from "../public/digicoreLogo.png";
 import monkey from "../public/main-logo.png";
 import Button from "./Button";
+import BigBtn from "./BigBtn";
 function Body() {
   return (
     <div className="py-10 px-6 md:py-36 md:px-16 relative">
@@ -26,7 +27,7 @@ function Body() {
           </h2>
         </div>
         <div className="pt-9">
-          <Button href="/Schedule" text="Start a project" />
+          <BigBtn href="/Schedule" text="Start a project" />
         </div>
       </div>
       <div id="About" className="text-white py-8 lg:py-0">
