@@ -55,6 +55,13 @@ function Header({ showMenu, setShowMenu }: headerProps) {
                 </div>
               );
             })}
+            <div className="relative flex  flex-row justify-center items-center ml-6 p-8">
+              <Button
+                href="https://docs.google.com/document/d/1qj0jUNRzkP_gAsl0NGUSsOGbrPUUwYSG3fzk3L0l4u0/edit?usp=sharing"
+                // href="../public/Resume.pdf"
+                text="Resume"
+              />
+            </div>
           </div>
         </div>
       )}

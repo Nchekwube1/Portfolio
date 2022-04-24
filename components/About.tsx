@@ -32,7 +32,7 @@ function Body() {
       <div id="About" className="text-white py-8 lg:py-0">
         <div className="flex flex-col relative">
           <div>
-            <h2 className="text-4xl source-bold">About Me</h2>
+            <h2 className=" text-3xl lg:text-4xl source-bold">About Me</h2>
           </div>
           <div className="w-8 rounded-lg relative h-2 bg-green-400"></div>
           <div className="flex flex-col lg:flex-row">

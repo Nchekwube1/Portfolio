@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import About from "../components/About";
 import { useEffect, useRef, useState } from "react";
 import { CubeSpinner } from "react-spinners-kit";
+import Experience from "../components/Experience";
 const Home: NextPage = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
       </Head>
       <Header setShowMenu={setShowMenu} showMenu={showMenu} />
       <About />
+      <Experience />
       <Footer />
     </div>
   );
