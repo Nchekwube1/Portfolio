@@ -46,7 +46,9 @@ function Header({ showMenu, setShowMenu }: headerProps) {
                 >
                   <a
                     href={`#${items}`}
-                    className={`text-gray-100 text-lg cursor-pointer hover:text-green-400 ${
+                    className={`${
+                      index !== activeIndex && "text-gray-100"
+                    } text-lg cursor-pointer hover:text-green-400 ${
                       index === activeIndex && "text-green-400"
                     }`}
                   >
@@ -58,7 +60,6 @@ function Header({ showMenu, setShowMenu }: headerProps) {
             <div className="relative flex  flex-row justify-center items-center ml-6 p-8">
               <Button
                 href="https://docs.google.com/document/d/1qj0jUNRzkP_gAsl0NGUSsOGbrPUUwYSG3fzk3L0l4u0/edit?usp=sharing"
-                // href="../public/Resume.pdf"
                 text="Resume"
               />
             </div>
@@ -79,7 +80,9 @@ function Header({ showMenu, setShowMenu }: headerProps) {
                 >
                   <a
                     href={`#${items}`}
-                    className={`text-gray-100 text-[13px] cursor-pointer hover:text-green-400 ${
+                    className={`text-[13px] cursor-pointer hover:text-green-400 ${
+                      index !== activeIndex && "text-gray-100"
+                    } text-lg cursor-pointer hover:text-green-400 ${
                       index === activeIndex && "text-green-400"
                     }`}
                   >
