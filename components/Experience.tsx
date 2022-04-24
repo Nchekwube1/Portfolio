@@ -29,8 +29,8 @@ function Experience() {
   ];
   return (
     <div
-      id="Experience "
-      className="text-white py-8 lg:py-0 px-6  md:px-16 w-full"
+      id="Experience"
+      className="text-white py-8 lg:py-0 px-6  md:px-16 w-full mb-8"
     >
       <div className="flex flex-col relative">
         <div>
@@ -47,14 +47,14 @@ function Experience() {
                 onClick={() => {
                   setCurrent(index);
                 }}
-                className={`relative border-b-2 md:border-b-0 md:border-l-2  w-full hover:bg-green-400 hover:bg-opacity-5 hover:text-green-400 rounded-r-sm ${
+                className={`relative border-b-2 md:border-b-0 md:border-l-2  justify-center w-full hover:bg-green-400 hover:bg-opacity-5 hover:text-green-400 rounded-r-sm ${
                   index !== current && "border-white/40 text-white/70"
                 }  py-3 px-5 cursor-pointer  ${
                   index === current &&
                   "border-green-400 text-green-400 bg-green-400 bg-opacity-5 flex-nowrap"
                 }`}
               >
-                <h2 className="relative flex-nowrap">{job}</h2>
+                <h2 className="relative flex-nowrap text-center">{job}</h2>
               </div>
             );
           })}
