@@ -7,6 +7,7 @@ import digicore from "../public/digicoreLogo.png";
 import monkey from "../public/main-logo.png";
 import Button from "./Button";
 import BigBtn from "./BigBtn";
+import me from "../public/me.jpg";
 function Body() {
   return (
     <div className="py-10 px-6 md:py-36 md:px-16 relative">
@@ -53,7 +54,13 @@ function Body() {
             </div>
             <div className="relative w-full md:w-1/2 lg:w-1/2 h-full md:ml-40 lg:ml-0">
               <div className="w-full lg:w-3/4 relative h-96">
-                <div className="image bg-black z-50 rounded-xl w-[95%] lg:w-2/3 h-[90%] absolute right-6 bottom-6"></div>
+                <div className="image bg-black z-50 rounded-xl w-[95%] lg:w-2/3 h-[90%] absolute right-6 bottom-6">
+                  {/* <Image
+                    src={me}
+                    alt="Unekwe Francis image"
+                    className="relative  object-fill h-[100%] rounded-xl w-full"
+                  /> */}
+                </div>
                 <div className="border-green-400 border-2 w-[95%] lg:w-2/3 h-[90%] rounded-xl  absolute right-1 bottom-0"></div>
               </div>
             </div>
