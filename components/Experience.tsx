@@ -13,7 +13,7 @@ function Experience() {
       Duration: "Jan 2022 - Present",
       tasks: [
         "Write modern, maintable component based codes reusable across different projects.",
-        "Work with and be able to pick up new technologies including Typescript, React Native, Java, etc. ",
+        "Work with and be able to pick up new technologies including Typescript, React Native, Kotlin,Java, etc. ",
         "Design pixel perfect UI translated from given designs.",
       ],
     },
