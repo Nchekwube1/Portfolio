@@ -27,7 +27,7 @@ function Experience() {
   return (
     <div
       id="Experience"
-      className="text-white py-8 lg:py-0 px-6  md:px-16 w-full mb-8"
+      className="text-white py-14  px-6  md:px-16 w-full mb-20"
     >
       <div className="flex flex-col relative">
         <div>

@@ -9,7 +9,7 @@ import { headerProps } from "../utils/types";
 
 function Header({ showMenu, setShowMenu }: headerProps) {
   const [activeIndex, setIndexIndex] = useState(0);
-  const tabItems = ["About", "Experience", "Projects", "Contact"];
+  const tabItems = ["About", "Experience", "Projects"];
   const changeTab = (index: number) => {
     setIndexIndex(index);
   };
