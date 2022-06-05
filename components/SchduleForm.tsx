@@ -1,9 +1,7 @@
 import Axios from "axios";
 import React, { useState } from "react";
-interface Props {
-  setEmailRes: React.Dispatch<React.SetStateAction<string>>;
-  setEmailSent: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import { Props } from "../utils/types";
+
 function SchduleForm({ setEmailRes, setEmailSent }: Props) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [name, setName] = useState("");

@@ -5,10 +5,8 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
 import Button from "./Button";
 import Link from "next/link";
-interface headerProps {
-  showMenu: any;
-  setShowMenu: any;
-}
+import { headerProps } from "../utils/types";
+
 function Header({ showMenu, setShowMenu }: headerProps) {
   const [activeIndex, setIndexIndex] = useState(0);
   const tabItems = ["About", "Experience", "Projects", "Contact"];

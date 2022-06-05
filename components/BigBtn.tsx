@@ -1,9 +1,7 @@
 import Link from "next/link";
 import React from "react";
-interface btnProps {
-  href: string;
-  text: string;
-}
+import { btnProps } from "../utils/types";
+
 function BigBtn({ href, text }: btnProps) {
   return (
     <Link href={href} passHref={true}>
