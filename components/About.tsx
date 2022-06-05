@@ -54,24 +54,18 @@ function Body() {
             </div>
             <div className="relative w-full md:w-1/2 lg:w-1/2 h-full md:ml-40 lg:ml-0">
               <div className="w-full lg:w-3/4 relative h-96">
-                <div className=" bg-black  z-50 rounded-xl w-[95%] lg:w-2/3 h-[90%] absolute right-6 bottom-6">
+                <div className=" bg-black  z-50 rounded-xl w-[95%] lg:w-2/3 h-[90%] absolute right-6 bottom-6 hover:translate-y-2 hover:translate-x-2 transition ease-in-out duration-300">
                   <Image
                     src={me}
                     alt="Unekwe Francis image"
                     layout="fill"
                     objectFit="cover"
-                    className="relative  rounded-xl max-w-sm"
+                    className="relative  rounded-xl "
                   />
-                  <div className=" w-full h-full bg-green-400 opacity-50 hover:opacity-0 rounded-xl absolute top-0"></div>
+                  <div className=" w-full h-full bg-green-400 opacity-50 transition ease-in-out duration-300 hover:opacity-0 rounded-xl absolute top-0"></div>
                 </div>
                 <div className="border-green-400 border-2 w-[95%] lg:w-2/3 h-[90%] rounded-xl  absolute right-1 bottom-0"></div>
               </div>
-
-              {/* <Image
-                src={me}
-                alt="Unekwe Francis image"
-                className="w-20 h-20 relative  rounded-xl "
-              /> */}
             </div>
           </div>
         </div>

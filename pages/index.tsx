@@ -31,7 +31,6 @@ const Home: NextPage = () => {
         backColor="#4db6ac"
         loading={loading}
       />
-      ;
     </div>
   ) : (
     <div className="relative w-full bg-theme-50 scroll-smooth">
