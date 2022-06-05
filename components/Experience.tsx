@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-interface rolesInterface {
-  Role: String;
-  Duration: String;
-  tasks: String[];
-}
+import { rolesInterface } from "../utils/types";
+
 function Experience() {
   const [current, setCurrent] = useState(0);
   const jobsArr = ["Digicore", "Monkey Music"];
